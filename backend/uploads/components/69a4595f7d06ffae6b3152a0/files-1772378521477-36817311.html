@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modern Login Form</title>
+<style>
+body {
+  font-family: Arial;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+#msg {
+  text-align: center;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="login-box">
+  <h2>Login</h2>
+  <input type="email" id="email" placeholder="Email" required>
+  <input type="password" id="password" placeholder="Password" required>
+  <button onclick="login()">Login</button>
+  <p id="msg"></p>
+</div>
+
+<script>
+function login() {
+  let email = document.getElementById("email").value;
+  let pass = document.getElementById("password").value;
+  let msg = document.getElementById("msg");
+
+  if(email === "admin@test.com" && pass === "123456") {
+    msg.style.color = "green";
+    msg.innerText = "Login Successful!";
+  } else {
+    msg.style.color = "red";
+    msg.innerText = "Invalid Credentials!";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navbar</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  background:#4f46e5;
+  color:white;
+}
+
+.nav-links{
+  display:flex;
+  gap:20px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  opacity:0.7;
+}
+
+.menu-toggle{
+  display:none;
+  font-size:22px;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+  .nav-links{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:60px;
+    right:0;
+    background:#4f46e5;
+    width:200px;
+    padding:20px;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <h2>Brand</h2>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="nav-links" id="navLinks">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

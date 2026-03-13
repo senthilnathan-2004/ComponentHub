@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Card Project</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navigation */
+nav{
+    background:#222;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00d9ff;
+}
+
+/* Button */
+.btn{
+    padding:8px 15px;
+    background:#007bff;
+    border:none;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0056b3;
+}
+
+/* Cards */
+.container{
+    padding:50px 10%;
+}
+
+.card-wrapper{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-bottom:15px;
+    color:#555;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav ul{
+        flex-direction:column;
+        background:#333;
+        position:absolute;
+        top:60px;
+        right:0;
+        width:200px;
+        display:none;
+    }
+
+    nav ul.active{
+        display:block;
+    }
+
+    .menu-toggle{
+        display:block;
+        color:white;
+        cursor:pointer;
+    }
+}
+
+.menu-toggle{
+    display:none;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>MySite</h2>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1 style="margin-bottom:30px;">Our Services</h1>
+
+    <div class="card-wrapper">
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>Modern and responsive website design services.</p>
+            <button class="btn" onclick="alertMessage()">Read More</button>
+        </div>
+
+        <div class="card">
+            <h3>Development</h3>
+            <p>Full-stack web development solutions.</p>
+            <button class="btn" onclick="alertMessage()">Read More</button>
+        </div>
+
+        <div class="card">
+            <h3>SEO Optimization</h3>
+            <p>Improve your website ranking and visibility.</p>
+            <button class="btn" onclick="alertMessage()">Read More</button>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+}
+
+function alertMessage(){
+    alert("Button clicked! JavaScript working 🚀");
+}
+</script>
+
+</body>
+</html>
