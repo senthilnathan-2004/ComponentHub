@@ -92,35 +92,9 @@ Designed using reusable component patterns.
 
 ---
 
-#  Project Structure
 
-ComponentHub
-│
-├── client
-│   ├── src
-│   │   ├── components
-│   │   │   ├── Button
-│   │   │   ├── Card
-│   │   │   ├── Navbar
-│   │   │   └── Modal
-│   │   │
-│   │   ├── pages
-│   │   ├── hooks
-│   │   ├── utils
-│   │   └── App.js
-│
-├── server
-│   ├── routes
-│   ├── controllers
-│   ├── models
-│   ├── middleware
-│   └── server.js
-│
-└── package.json
 
----
-
-# 🔌 API Design
+#  API Design
 
 Example API endpoint
 
@@ -139,7 +113,7 @@ Example response
 
 ---
 
-# 📸 Screenshots
+# Screenshots
 
 Home Page
 
@@ -175,7 +149,7 @@ BuyerDashboard Page
 
 ---
 
-# ⚙ Installation & Setup
+#  Installation & Setup
 
 Clone the repository
 
