@@ -143,15 +143,27 @@ Example response
 
 Home Page
 
-![Home](screenshots/home.png)
+![Home](home.png)
 
 Component Library
 
-![Components](screenshots/components.png)
+![Components](component.png)
 
-Component Preview
+About Page
 
-![Preview](screenshots/preview.png)
+![About](about.png)
+
+Admin Page
+
+![Admin](admin.png)
+
+Dashboard Page
+
+![Dashboard](dashboard.png)
+
+Profile Page
+
+![Profile](profile.png)
 
 ---
 
