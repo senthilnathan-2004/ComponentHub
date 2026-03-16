@@ -117,35 +117,35 @@ Example response
 
 Home Page
 
-![Home](home.png)
+![Home](screenshots/home.png)
 
 Component Library
 
-![Components](component.png)
+![Components](screenshots/component.png)
 
 About Page
 
-![About](about.png)
+![About](screenshots/about.png)
 
 Admin Page
 
-![Admin](admin.png)
+![Admin](screenshots/admin.png)
 
 Dashboard Page
 
-![Dashboard](dashboard.png)
+![Dashboard](screenshots/dashboard.png)
 
 Profile Page
 
-![Profile](profile.png)
+![Profile](screenshots/profile.png)
 
 Search Page
 
-![Search](search.png)
+![Search](screenshots/search.png)
 
 BuyerDashboard Page
 
-![BuyerDashboard](buyer.png)
+![BuyerDashboard](screenshots/buyer.png)
 
 ---
 
