@@ -165,6 +165,14 @@ Profile Page
 
 ![Profile](profile.png)
 
+Search Page
+
+![Search](Search.png)
+
+BuyerDashboard Page
+
+![BuyerDashboard](buyer.png)
+
 ---
 
 # ⚙ Installation & Setup
