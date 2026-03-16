@@ -167,7 +167,7 @@ Profile Page
 
 Search Page
 
-![Search](Search.png)
+![Search](search.png)
 
 BuyerDashboard Page
 
